@@ -15,28 +15,28 @@
 </head>
 <body>
     <!--Header-->
-    <header class="page-header">
+    <header class="header">
         <div class="container flex">
-            <nav class="main-nav">
-                <a class="logo header-logo" href="./index.html">Web<span class="header-logo-color">Studio</span></a>
-                <ul class="site-nav-list">
-                    <li class="site-nav-item"><a class="site-nav-link" href="./index.html">Studio</a></li>
-                    <li class="site-nav-item"><a class="site-nav-link site-nav-active" href="./portfolio.html">Portfolio</a></li>
-                    <li class="site-nav-item"><a class="site-nav-link" href="">Contacts</a></li>
+            <nav class="nav">
+                <a class="logo header__logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="./index.html">Studio</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Contacts</a></li>
                 </ul>
             </nav>
-            <ul class="header-contacts-list">
-                <li class="header-contacts-item">
-                    <a class="header-contacts-link" href="mailto:info@devstudio.com">                                                                                                                                                   
-                        <svg class="contact-icon" width="16" height="12">
+            <ul class="header__contacts">
+                <li>
+                    <a class="header__contact-link" href="mailto:info@devstudio.com">
+                        <svg class="header__contact-icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="header-contacts-item">
-                    <a class="header-contacts-link" href="tel:+380961111111">
-                        <svg class="contact-icon" width="10" height="16">
+                <li>
+                    <a class="header__contact-link" href="tel:+380961111111">
+                        <svg class="header__contact-icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -156,50 +156,66 @@
         
     </main>
     <!--Footer-->
-    <footer class="page-footer">
-        <div class="container footer-flex">
+    <footer class="footer">
+        <div class="container footer__container">
             <div>
-                <a class="logo footer-logo" href="./index.html">Web<span class="footer-logo-color">Studio</span></a>
-                <address class="address">695 Park Ave, New York, NY 10065, <br>United States</address>
+                <a class="logo footer__logo" href="./index.html">Web<span class="logo__white">Studio</span></a>
+                <address class="footer__address">695 Park Ave, New York, NY 10065,<br>United States</address>
                 <ul>
-                    <li class="footer-contacts-item"><a class="footer-contacts" href="tel:+12127724150">+1 212-772-4150</a></li>
-                    <li class="footer-contacts-item"><a class="footer-contacts" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="footer__contacts-item"><a class="footer__contacts" href="tel:+12127724150">+1 212-772-4150</a></li>
+                    <li class="footer__contacts-item"><a class="footer__contacts" href="mailto:info@example.com">info@example.com</a></li>
                 </ul>
             </div>
-            <div class="footer-socials">
-                <h2 class="footer-title">Find us on</h2>
-                <ul class="socials-block">
+            <div class="footer__socials">
+                <h2 class="footer__title">Find us on</h2>
+                <ul class="socials">
                     <li>
-                        <a  class="social-link footer-social-link" href="">
-                            <svg class="social-link-icon">
+                        <a  class="socials__link socials__link--white" href="">
+                            <svg class="socials__icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a  class="social-link footer-social-link" href="">
-                            <svg class="social-link-icon">
+                        <a  class="socials__link socials__link--white" href="">
+                            <svg class="socials__icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a  class="social-link footer-social-link" href="">
-                            <svg class="social-link-icon">
+                        <a  class="socials__link socials__link--white" href="">
+                            <svg class="socials__icon">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a  class="social-link footer-social-link" href="">
-                            <svg class="social-link-icon">
+                        <a  class="socials__link socials__link--white" href="">
+                            <svg class="socials__icon">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
+            
+            <div class="subscribe">
+                <strong class="footer__title">Subscribe to the newsletter</strong>
+                <form class="subscribe__form">
+                    <input class="subscribe__input" type="email" name="mail" id="mail" placeholder=" " autocomplete="off"/>
+                    <label class="subscribe__label" for="mail">E-mail</label>
+                    <button class="btn subscribe__btn" type="submit">Subscribe
+                        <svg class="subscribe__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
         </div>
     </footer>
+   
+    <script src="./js/modal.js"></script>
 </body>
 </html>
